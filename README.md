@@ -25,3 +25,5 @@ I used Reactstrap, built on Bootstrap, for styling, because I absolutely love it
 [X] Working Algorithm
 [] At least 3 features from Custom Features section of Rubric Document (WIP, 2/3)
 [] Section outlining Rules (WIP)
+
+#### Just fork, clone, yarn, and yarn start to see it in action!
