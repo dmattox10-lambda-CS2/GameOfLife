@@ -1,11 +1,11 @@
 import React from 'react'
 import { Container, Row, Col, Jumbotron } from 'reactstrap'
 import Game from './components/Game'
-import Controls from './components/Controls'
 import Rules from './components/Rules'
 
-import 'bootswatch/dist/sketchy/bootstrap.min.css'
 import './App.css'
+import 'bootswatch/dist/sketchy/bootstrap.min.css'
+
 
 function App() {
 	return (
@@ -19,16 +19,15 @@ function App() {
 					</Col>
 				</Row>
 				<Row>
-					<Col xs='6'>
-						<Rules />
-					</Col>
-					<Col xs='6'>
-						<Controls />
+					<Col xs='12'>
+						<Container>
+							<Game />
+						</Container>
 					</Col>
 				</Row>
 				<Row>
 					<Col xs='12'>
-						<Game />
+						<Rules />
 					</Col>
 				</Row>
 			</Container>
