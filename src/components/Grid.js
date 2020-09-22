@@ -15,7 +15,7 @@ const Grid = props => {
 			<div key={x}
 				className='cell'
 				onMouseDown={() => toggleCell(cell, x, y)}
-				style={{ backgroundColor: cell ? '#424151' : null }}
+				style={{ backgroundColor: cell ? props.color : null }}
 			/>
 		)
 	}

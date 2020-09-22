@@ -13,6 +13,7 @@ const Game = props => {
 	const [world, updateWorld] = useState(loadPreset('line'))
 	const [generation, setGeneration] = useState(0)
 	const [playing, setPlaying] = useState(false)
+	const [color, setColor] = useState('#424151')
 
 	const changeState = (world, currentGeneration) => {
 		updateWorld(world)
@@ -24,6 +25,7 @@ const Game = props => {
 	const onShuffle = () => changeState(shuffle(world), 0)
 	const onPreset = preset => changeState(loadPreset(preset), 0)
 	const onNext = () => onChange(nextGeneration(world))
+	const onColor = newColor => setColor(newColor)
 
 	useInterval(() => {
 		onNext()
@@ -39,7 +41,7 @@ const Game = props => {
 	}
 	return (
 		<div>
-			<Grid world={world} onChange={onChange} />
+			<Grid world={world} onChange={onChange} color={color} />
 			<p>Generation: {generation}</p>
 			<Controls
 				clear={onClear}
@@ -48,6 +50,8 @@ const Game = props => {
 				stop={onStop}
 				shuffle={onShuffle}
 				playing={playing}
+				color={color}
+				changeColor={onColor}
 			/>
 			<Presets
 				load={onPreset}
