@@ -4,7 +4,7 @@ import Game from './components/Game'
 import Rules from './components/Rules'
 
 import './App.css'
-import 'bootswatch/dist/sketchy/bootstrap.min.css'
+import 'bootswatch/dist/slate/bootstrap.min.css'
 
 
 function App() {
