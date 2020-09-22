@@ -19,11 +19,15 @@ I used Reactstrap, built on Bootstrap, for styling, because I absolutely love it
 [X] Random Cell Configuration
 [X] Cell Color Picker
 
+## Stretch Features From List of Requirements
+[X] Step One Generation At A Time
+[] Allow Users To Specify Speed (WIP)
+
 ### MVP Requirements
 [X] Display Current Generation
 [X] Grid of cells at least 25x25 able to be toggled alive or dead
 [X] Working Algorithm
 [X] At least 3 features from Custom Features section of Rubric Document
-[] Section outlining Rules (WIP)
+[X] Section outlining Rules
 
 #### Just fork, clone, yarn, and yarn start to see it in action!
