@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Button } from 'reactstrap'
 import reactCSS from 'reactcss'
 import { SketchPicker } from 'react-color'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRandom, faTimesCircle, faForward, faStopCircle, faPlay } from '@fortawesome/free-solid-svg-icons'
 
 const Controls = props => {
 
@@ -43,19 +45,19 @@ const Controls = props => {
 
 	return (
 		<div className='controls'>
-			<Button color='primary' icon='random' labelPosition='right'
+			<Button color='primary'
 				onClick={props.shuffle} disabled={props.playing}
-			>Shuffle</Button>
-			<Button color='primary' icon='redo' labelPosition='right' onClick={props.clear}>Clear</Button>
-			<Button color='primary' icon='right arrow' labelPosition='right' onClick={props.next}>Next</Button>
+			>Shuffle&nbsp;<FontAwesomeIcon icon={faRandom} /></Button>
+			<Button color='primary' onClick={props.clear}>Clear&nbsp;<FontAwesomeIcon icon={faTimesCircle} /></Button>
+			<Button color='primary' onClick={props.next}>Next&nbsp;<FontAwesomeIcon icon={faForward} /></Button>
 			{props.playing ?
-				<Button color='danger' icon='stop' labelPosition='right' onClick={props.stop}>Stop</Button> :
-				<Button color='success' icon='play' labelPosition='right' onClick={props.play}>Play</Button>
+				<Button color='danger' onClick={props.stop}>Stop&nbsp;<FontAwesomeIcon icon={faStopCircle} /></Button> :
+				<Button color='success' onClick={props.play}>Play&nbsp;<FontAwesomeIcon icon={faPlay} /></Button>
 			}
 			<br />
-			<p>Active Cell Color: <div style={styles.swatch} onClick={handleClick}>
+			<p>Active Cell Color: </p><div style={styles.swatch} onClick={handleClick}>
 				<div style={styles.color} />
-			</div></p>
+			</div>
 			{ show ? <div style={styles.popover}>
 				<div style={styles.cover} onClick={handleClose} />
 				<SketchPicker color={props.color} onChange={(e) => handleChange(e.hex)} />

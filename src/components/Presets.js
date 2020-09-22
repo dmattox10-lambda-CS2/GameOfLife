@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUpload } from '@fortawesome/free-solid-svg-icons'
+
 const options = [
 	{ key: 'line', value: 'line', text: 'Line' },
 	{ key: 'glider', value: 'glider', text: 'Glider' },
@@ -23,7 +26,7 @@ const Presets = props => {
 		<div className='controls'>
 			<ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
 				<DropdownToggle caret>
-                    Select a Preset:
+					Select a Preset:
 				</DropdownToggle>
 				<DropdownMenu>
 					{
@@ -34,10 +37,9 @@ const Presets = props => {
 				</DropdownMenu>
 			</ButtonDropdown>
 			<Button
-				content='Load'
 				onClick={onLoad}
 				disabled={props.playing}
-			>Load</Button>
+			>Load&nbsp;<FontAwesomeIcon icon={faUpload} /></Button>
 		</div>
 	)
 
