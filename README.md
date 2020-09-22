@@ -17,13 +17,13 @@ I used Reactstrap, built on Bootstrap, for styling, because I absolutely love it
 ## Custom Features From List of Requirements
 [X] Sample Cell Configurations for users to load and run
 [X] Random Cell Configuration
-[] Cell Color Picker (WIP)
+[X] Cell Color Picker
 
 ### MVP Requirements
 [X] Display Current Generation
 [X] Grid of cells at least 25x25 able to be toggled alive or dead
 [X] Working Algorithm
-[] At least 3 features from Custom Features section of Rubric Document (WIP, 2/3)
+[X] At least 3 features from Custom Features section of Rubric Document
 [] Section outlining Rules (WIP)
 
 #### Just fork, clone, yarn, and yarn start to see it in action!
