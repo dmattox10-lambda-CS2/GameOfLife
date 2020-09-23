@@ -21,7 +21,7 @@ I used Reactstrap, built on Bootstrap, for styling, because I absolutely love it
 
 ## Stretch Features From List of Requirements
 [X] Step One Generation At A Time
-[] Allow Users To Specify Speed (WIP)
+[X] Allow Users To Specify Speed
 
 ### MVP Requirements
 [X] Display Current Generation

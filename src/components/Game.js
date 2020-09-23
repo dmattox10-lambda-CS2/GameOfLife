@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useInterval } from '../hooks/useInterval'
+import Slider from 'react-rangeslider'
 
 import Grid from './Grid'
 import Controls from './Controls'
@@ -14,6 +15,7 @@ const Game = props => {
 	const [generation, setGeneration] = useState(0)
 	const [playing, setPlaying] = useState(false)
 	const [color, setColor] = useState('#424151')
+	const [speed, setSpeed] = useState(GENERATION_TIME)
 
 	const changeState = (world, currentGeneration) => {
 		updateWorld(world)
@@ -29,7 +31,7 @@ const Game = props => {
 
 	useInterval(() => {
 		onNext()
-	}, playing === true ? GENERATION_TIME : null)
+	}, playing === true ? speed : null)
 
 	const onPlay = () => {
 		setPlaying(true)
@@ -39,6 +41,9 @@ const Game = props => {
 		setPlaying(false)
 		// clearInterval(interval)
 	}
+
+	const onSpeed = value => setSpeed(value)
+
 	return (
 		<div>
 			<Grid world={world} onChange={onChange} color={color} />
@@ -52,6 +57,15 @@ const Game = props => {
 				playing={playing}
 				color={color}
 				changeColor={onColor}
+			/>
+			<p>Simulation Speed: (Time between generations, more is slower)</p>
+			<Slider
+				value={speed}
+				min={200}
+				max={2000}
+				step={100}
+				orientation='horizontal'
+				onChange={onSpeed}
 			/>
 			<Presets
 				load={onPreset}

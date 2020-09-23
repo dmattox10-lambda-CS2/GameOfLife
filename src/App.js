@@ -5,6 +5,7 @@ import Rules from './components/Rules'
 
 import './App.css'
 import 'bootswatch/dist/slate/bootstrap.min.css'
+import 'react-rangeslider/lib/index.css'
 
 
 function App() {
