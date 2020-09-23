@@ -9,7 +9,7 @@ import Presets from './Presets'
 import { GENERATION_TIME, createWorld, nextGeneration, shuffle } from '../game'
 import { loadPreset } from '../presets'
 
-const Game = props => {
+const Game = () => {
 
 	const [world, updateWorld] = useState(loadPreset('line'))
 	const [generation, setGeneration] = useState(0)

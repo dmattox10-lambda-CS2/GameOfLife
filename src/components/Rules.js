@@ -1,10 +1,10 @@
 import React from 'react'
 import {
-	Card, CardImg, CardText, CardBody,
-	CardTitle, CardSubtitle, Button, Col, Row, Container
+	Card, CardText, CardBody,
+	CardTitle, Col, Row, Container
 } from 'reactstrap'
 
-const Rules = props => {
+const Rules = () => {
 
 	return (
 		<div>
@@ -17,16 +17,16 @@ const Rules = props => {
 								<CardText>
 									<p>
 										Any live cell with fewer than two live neighbours dies, as if by underpoppation.
-										</p>
+									</p>
 									<p>
 										Any live cell with two or three live neighbours lives on to the next generation.
-										</p>
+									</p>
 									<p>
 										Any live cell with more than three live neighbours dies, as if by overpoppation.
-										</p>
+									</p>
 									<p>
 										Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
-										</p>
+									</p>
 								</CardText>
 							</CardBody>
 						</Card>
