@@ -1,7 +1,7 @@
 # GameOfLife
 Conway's Game of Life with React Hooks!
 
-Hosted on my private server [HERE! CLICK ME!](https://life.danielmattox.com)
+Hosted/Deployed on my private server [HERE! CLICK ME!](https://life.danielmattox.com)
 
 This is a React implementation of Conway's Game of Life [Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
