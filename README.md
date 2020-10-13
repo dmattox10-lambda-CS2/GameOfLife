@@ -15,14 +15,14 @@ The game components have a good separation of concerns
 I used Reactstrap, built on Bootstrap, for layout, together with bootswatch for styling because I absolutely love them!
 
 ## Custom Features
-[X] Sample Cell Configurations for users to load and run
-[X] Random Cell Configuration
-[X] Cell Color Picker
-[X] Step One Generation At A Time
-[X] Allow Users To Specify Speed
+- [X] Sample Cell Configurations for users to load and run
+- [X] Random Cell Configuration
+- [X] Cell Color Picker
+- [X] Step One Generation At A Time
+- [X] Allow Users To Specify Speed
 
 ### Base Game Expectations
-[X] Display Current Generation
-[X] Grid of cells at least 25x25 able to be toggled alive or dead
-[X] Working Algorithm
-[X] Section outlining Rules
+- [X] Display Current Generation
+- [X] Grid of cells at least 25x25 able to be toggled alive or dead
+- [X] Working Algorithm
+- [X] Section outlining Rules
