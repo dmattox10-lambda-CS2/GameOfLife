@@ -26,3 +26,6 @@ I used Reactstrap, built on Bootstrap, for layout, together with bootswatch for 
 - [X] Grid of cells at least 25x25 able to be toggled alive or dead
 - [X] Working Algorithm
 - [X] Section outlining Rules
+
+<div><img src="media/1.png" align="center" style="width: 100%" /></div>
+<div><img src="media/2.png" align="center" style="width: 100%" /></div>
